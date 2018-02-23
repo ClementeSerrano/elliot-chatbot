@@ -1,0 +1,28 @@
+h1{
+  font-size: 65px;
+  text-align: left;
+  color: #fff;
+}
+h3{
+  font-size: 15px;
+  text-align: left;
+  color: #fff;
+}
+p{
+  font-size: 35px;
+  text-align: left;
+  color: #fff;
+  font-weight: 250;
+}
+.masthead{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #7b4397;
+  background:  -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background:  linear-gradient(to left, #7b4397, #dc2430); 
+}
+.superRow{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
