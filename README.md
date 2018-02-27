@@ -1,6 +1,8 @@
 # UTIPS SpA | Proyecto UBot
-Versión MVP
+Versión MVP.
+
 Desarrollado por Joaquín Gumucio & Clemente Serrano (inicio: 20-02-2018).
+
 Copyright © 2018 UTIPS SpA. Todos los derechos reservados.
 
 # Empezando

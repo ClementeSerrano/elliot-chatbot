@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import ChatBot from '../lib/index';
+import ConexionApi from './ConexionApi';
 
 
 const theme = {
@@ -19,8 +20,19 @@ const theme = {
 const steps = [
   {
     id: '1',
-    message: 'Hola! Me llamo ubot',
-    end: true,
+    message: '¡Hola! Me llamo ubot. ¿En qué puedo ayudarte?',
+    trigger: 'pregunta',
+  },
+  {
+    id: 'pregunta',
+    user: true,
+    trigger: '3',
+  },
+  {
+    id: '3',
+    component: <ConexionApi />,
+    asMessage: true,
+    trigger: 'pregunta',
   },
 ];
 
