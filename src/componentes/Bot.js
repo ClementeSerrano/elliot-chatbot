@@ -38,7 +38,7 @@ const steps = [
 
 const Bot = () => (
   <ThemeProvider theme={theme}>
-    <ChatBot steps={steps} />
+    <ChatBot floating steps={steps} />
   </ThemeProvider>
 );
 
