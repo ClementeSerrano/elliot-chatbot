@@ -1,7 +1,7 @@
-import _ from 'lodash';
+import _ from 'lodash'; // eslint-disable-line
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Random from 'random-id';
+import PropTypes from 'prop-types'; // eslint-disable-line
+import Random from 'random-id'; // eslint-disable-line
 import { CustomStep, OptionsStep, TextStep } from './steps';
 import schema from './schemas/schema';
 import * as storage from './storage';
@@ -17,7 +17,7 @@ import SubmitButton from './SubmitButton';
 import Recognition from './recognition';
 import { ChatIcon, CloseIcon, SubmitIcon, MicIcon } from './icons';
 
-class ChatBot extends Component {
+class ChatBot extends Component { // eslint-disable-line
   /* istanbul ignore next */
   constructor(props) {
     super(props);
@@ -85,7 +85,7 @@ class ChatBot extends Component {
     const firstStep = this.props.steps[0];
 
     if (firstStep.message) {
-      const message = firstStep.message;
+      const message = firstStep.message; // eslint-disable-line
       firstStep.message = typeof message === 'function' ? message() : message;
       steps[firstStep.id].message = firstStep.message;
     }
@@ -134,8 +134,8 @@ class ChatBot extends Component {
   componentWillUpdate(nextProps, nextState) {
     const { opened } = nextProps;
 
-    if (opened !== undefined && opened !== nextState.opened) {
-      this.setState({ opened });
+    if (opened !== undefined && opened !== nextState.opened) { // eslint-disable-line
+      this.setState({ opened }); // eslint-disable-line
     }
   }
 
@@ -143,8 +143,8 @@ class ChatBot extends Component {
     this.content.removeEventListener('DOMNodeInserted', this.onNodeInserted);
   }
 
-  onNodeInserted(event) {
-    event.currentTarget.scrollTop = event.currentTarget.scrollHeight;
+  onNodeInserted(event) { // eslint-disable-line
+    event.currentTarget.scrollTop = event.currentTarget.scrollHeight; // eslint-disable-line
   }
 
   onRecognitionChange(value) {
@@ -306,7 +306,7 @@ class ChatBot extends Component {
 
   isLastPosition(step) {
     const { renderedSteps } = this.state;
-    const length = renderedSteps.length;
+    const length = renderedSteps.length; // eslint-disable-line
     const stepIndex = renderedSteps.map(s => s.key).indexOf(step.key);
 
     if (length <= 1 || stepIndex + 1 === length) {
@@ -547,7 +547,7 @@ class ChatBot extends Component {
           {!hideHeader && header}
           <Content
             className="rsc-content"
-            innerRef={contentRef => (this.content = contentRef)}
+            innerRef={contentRef => (this.content = contentRef)} // eslint-disable-line
             floating={floating}
             style={contentStyle}
           >
@@ -557,7 +557,7 @@ class ChatBot extends Component {
             <Input
               type="textarea"
               style={inputStyle}
-              innerRef={inputRef => (this.input = inputRef)}
+              innerRef={inputRef => (this.input = inputRef)} // eslint-disable-line
               className="rsc-input"
               placeholder={inputInvalid ? '' : inputPlaceholder}
               onKeyPress={this.handleKeyPress}
@@ -588,18 +588,18 @@ class ChatBot extends Component {
 }
 
 ChatBot.propTypes = {
-  avatarStyle: PropTypes.object,
+  avatarStyle: PropTypes.object, // eslint-disable-line
   botAvatar: PropTypes.string,
   botDelay: PropTypes.number,
-  bubbleStyle: PropTypes.object,
+  bubbleStyle: PropTypes.object, // eslint-disable-line
   cache: PropTypes.bool,
   cacheName: PropTypes.string,
   className: PropTypes.string,
-  contentStyle: PropTypes.object,
+  contentStyle: PropTypes.object, // eslint-disable-line
   customDelay: PropTypes.number,
-  customStyle: PropTypes.object,
+  customStyle: PropTypes.object, // eslint-disable-line
   floating: PropTypes.bool,
-  footerStyle: PropTypes.object,
+  footerStyle: PropTypes.object, // eslint-disable-line
   handleEnd: PropTypes.func,
   headerComponent: PropTypes.element,
   headerTitle: PropTypes.string,
@@ -607,16 +607,16 @@ ChatBot.propTypes = {
   hideHeader: PropTypes.bool,
   hideSubmitButton: PropTypes.bool,
   hideUserAvatar: PropTypes.bool,
-  inputStyle: PropTypes.object,
+  inputStyle: PropTypes.object, // eslint-disable-line
   opened: PropTypes.bool,
   toggleFloating: PropTypes.func,
   placeholder: PropTypes.string,
   recognitionEnable: PropTypes.bool,
   recognitionLang: PropTypes.string,
   recognitionPlaceholder: PropTypes.string,
-  steps: PropTypes.array.isRequired,
-  style: PropTypes.object,
-  submitButtonStyle: PropTypes.object,
+  steps: PropTypes.array.isRequired, // eslint-disable-line
+  style: PropTypes.object, // eslint-disable-line
+  submitButtonStyle: PropTypes.object, // eslint-disable-line
   userAvatar: PropTypes.string,
   userDelay: PropTypes.number,
   width: PropTypes.string,
