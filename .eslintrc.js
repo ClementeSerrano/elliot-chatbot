@@ -23,6 +23,8 @@ module.exports = {
         "react/jsx-filename-extension": 0,
         "no-underscore-dangle": 0,
         "jsx-a11y/anchor-is-valid": 0,
-        "max-len": 0
+        "max-len": 0,
+        "no-tabs": 0,
+        "jsx-a11y/alt-text": 0
     }
 };
