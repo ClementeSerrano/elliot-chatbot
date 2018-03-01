@@ -1,4 +1,5 @@
-import _ from 'lodash';
+import isEmpty from 'lodash/isEmpty'
+import map from 'lodash/map'
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Random from 'random-id';
@@ -351,7 +352,7 @@ class ChatBot extends Component {
 
   handleSubmitButton() {
     const { inputValue, speaking, recognitionEnable } = this.state;
-    if ((_.isEmpty(inputValue) || speaking) && recognitionEnable) {
+    if ((isEmpty(inputValue) || speaking) && recognitionEnable) {
       this.recognition.speak();
       if (!speaking) {
         this.setState({ speaking: true });
@@ -522,7 +523,7 @@ class ChatBot extends Component {
     );
 
     const icon =
-      (_.isEmpty(inputValue) || speaking) && recognitionEnable ? <MicIcon /> : <SubmitIcon />;
+      (isEmpty(inputValue) || speaking) && recognitionEnable ? <MicIcon /> : <SubmitIcon />;
 
     const inputPlaceholder = speaking ? recognitionPlaceholder : placeholder;
 
@@ -551,7 +552,7 @@ class ChatBot extends Component {
             floating={floating}
             style={contentStyle}
           >
-            {_.map(renderedSteps, this.renderStep)}
+            {map(renderedSteps, this.renderStep)}
           </Content>
           <Footer className="rsc-footer" style={footerStyle}>
             <Input

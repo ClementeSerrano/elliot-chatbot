@@ -65,7 +65,7 @@ const MockupIphone = styled.div`
     right: 0;
     width: 100%; 
     height: 100%;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-image: url(${iphoneImg});
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(${iphoneImg});
 `;
