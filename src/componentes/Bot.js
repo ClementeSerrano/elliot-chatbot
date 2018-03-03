@@ -1,9 +1,8 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
 
-import ChatBot from '../lib/index';
-import ConexionApi from './ConexionApi';
-
+import ChatBot from '../lib/index'
+import ConexionApi from './ConexionApi'
 
 const theme = {
   background: '#f5f8fb',
@@ -14,32 +13,32 @@ const theme = {
   botBubbleColor: '#7b4397',
   botFontColor: '#fff',
   userBubbleColor: '#fff',
-  userFontColor: '#4a4a4a',
-};
+  userFontColor: '#4a4a4a'
+}
 
 const steps = [
   {
     id: '1',
-    message: '¡Hola! Me llamo ubot. ¿En qué puedo ayudarte?',
-    trigger: 'pregunta',
+    message: '¡Hola! Me llamo Ubot. ¿En qué puedo ayudarte?',
+    trigger: 'pregunta'
   },
   {
     id: 'pregunta',
     user: true,
-    trigger: '3',
+    trigger: '3'
   },
   {
     id: '3',
     component: <ConexionApi />,
     asMessage: true,
-    trigger: 'pregunta',
-  },
-];
+    trigger: 'pregunta'
+  }
+]
 
 const Bot = () => (
   <ThemeProvider theme={theme}>
     <ChatBot floating steps={steps} />
   </ThemeProvider>
-);
+)
 
-export default Bot;
+export default Bot
