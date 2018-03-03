@@ -5,7 +5,7 @@ const htmlVowels = {
   '&#250;': 'ú'
 }
 
-export const answersToUTF = answers => {
+export const fixVowels = answers => {
   return answers.map(answer => {
     for (const key in htmlVowels) {
       answer = {answer: answer.answer.replace(new RegExp(key, 'g'), htmlVowels[key])}
