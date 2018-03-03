@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {answersToUTF} from '../lib/helpers/answers'
+import {fixVowels} from '../lib/helpers/answers'
 
 class ConexionApi extends Component {
   state = {
@@ -29,8 +29,7 @@ class ConexionApi extends Component {
         if (response.answers && response.answers[0].answer === 'No good match found in the KB') {
           this.setDefaultAnswer()
         } else {
-          console.log('answers:', response.answers)
-          this.setState({ answers: answersToUTF(response.answers) })
+          this.setState({ answers: fixVowels(response.answers) })
         }
       } else {
         this.setDefaultAnswer()
