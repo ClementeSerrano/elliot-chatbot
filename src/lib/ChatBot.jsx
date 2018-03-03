@@ -522,8 +522,7 @@ class ChatBot extends Component { // eslint-disable-line
       </Header>
     );
 
-    const icon =
-      (isEmpty(inputValue) || speaking) && recognitionEnable ? <MicIcon /> : <SubmitIcon />;
+    const icon = (isEmpty(inputValue) || speaking) && recognitionEnable ? <MicIcon /> : <SubmitIcon />;
 
     const inputPlaceholder = speaking ? recognitionPlaceholder : placeholder;
 
