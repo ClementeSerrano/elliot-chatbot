@@ -11,7 +11,7 @@ class ConexionApi extends Component {
       const { steps } = this.props
       const question = steps.pregunta.value
       if (question) {
-        // We need to take out the knowledgeBaseID of the clients to avoid filtering to the client.
+        // We need to take out the knowledgeBaseID and api key of the clients to avoid filtering to the client.
         // Maybe make API requests from our own server
         var response = await fetch(
           'https://westus.api.cognitive.microsoft.com/qnamaker/v2.0/knowledgebases/ff47195a-05db-4768-abf2-6218af1ab1bc/generateAnswer', {
