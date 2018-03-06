@@ -29,19 +29,19 @@ const SuperPortada = styled.header`
   position: relative;
   width: 100%;
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 400px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  background: #7b4397;
+  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
 `;
 const ContenidoPortada = styled.div`
   max-width: 500px;
   margin-bottom: 100px;
   text-align: center;
 `;
-const Titulo1 = styled.h1`
-  font-size: 65px;
+const Titulo1 = styled.h2`
+  font-size: 150px;
   text-align: left;
   color: #fff;
 `;
@@ -56,7 +56,8 @@ const ContenedorIphone = styled.div`
   padding-bottom: 207.19%;
 `;
 const MockupIphone = styled.div`
-  width: 100%;
+  margin-top: 180px;
+  margin-bottom: 40px;
   padding-bottom: 61.775701%;
   position: absolute;
   top: 0; 
