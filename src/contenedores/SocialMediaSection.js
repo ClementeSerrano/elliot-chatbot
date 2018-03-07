@@ -10,7 +10,7 @@ const SocialMediaSection = () => (
   <SuperContainer>
     <Grid bsClass="container">
       <Row>
-        <Title>Integralo en tus redes sociales</Title>
+        <Title>Intégralo en tus redes sociales</Title>
       </Row>
       <Row>
         <Col lg={3}>
@@ -39,8 +39,8 @@ const SuperContainer = styled.header`
   padding-bottom: 150px;
 `;
 const Title = styled.h1`
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
   margin-top: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 `;
