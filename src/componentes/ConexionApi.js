@@ -26,7 +26,7 @@ class ConexionApi extends Component {
             })
           })
         response = await response.json()
-        if (response.answers && response.answers[0].answer === 'No good match found in the KB') {
+        if (response.answers.length && response.answers[0].score <= 40) {
           this.setDefaultAnswer()
         } else {
           this.setState({ answers: fixVowels(response.answers) })
