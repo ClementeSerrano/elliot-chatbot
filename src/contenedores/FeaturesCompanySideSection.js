@@ -34,6 +34,12 @@ const Title = styled.h1`
   text-align: center;
   margin-top: 100px;
   margin-bottom: 80px;
+  @media screen and (max-width: 850px) {
+    font-size: 100px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 70px;
+  }
 `;
 const MockupMacbook = styled.div`
   margin-right: auto;
@@ -43,4 +49,10 @@ const MockupMacbook = styled.div`
   height: 100%;
   background-repeat: no-repeat;
   background-image: url(${macbookMockup});
+  @media screen and (max-width: 850px) {
+    max-width: 90%;
+  }
+  @media screen and (max-width: 800px) {
+    max-width: 95%;
+  }
 `;

@@ -10,7 +10,20 @@ const FeaturesClientSideSection = () => (
   <SectionMargin>
     <Grid bsClass="container">
       <Row>
-        <Col lg={6}>
+        <Col lg={6} lgPush={6}>
+          <Row>
+            <Title>Mejores </Title> 
+          </Row>
+          <Row>
+            <SubTitle>conversaciones </SubTitle>
+            <BoldTitle> impulsan</BoldTitle>
+          </Row>
+          <SuperRow>
+            <BoldTitle>mejores </BoldTitle>
+            <SubTitle> fidelizaciones</SubTitle>
+          </SuperRow>
+        </Col>
+        <Col lg={6} lgPull={6}>
           <Row>
             <Col lg={6}>
               <img src={FullTimeAtention} className="logo" alt="" width="155px" height="100px"/>
@@ -32,19 +45,6 @@ const FeaturesClientSideSection = () => (
             </Col>
           </Row>
         </Col>
-        <Col lg={6}>
-          <Row>
-            <Title>Mejores </Title> 
-          </Row>
-          <Row>
-            <SubTitle>conversaciones </SubTitle>
-            <BoldTitle> impulsan</BoldTitle>
-          </Row>
-          <Row>
-            <BoldTitle>mejores </BoldTitle>
-            <SubTitle> fidelizaciones</SubTitle>
-          </Row>
-        </Col>
       </Row>
     </Grid>
   </SectionMargin>
@@ -57,13 +57,18 @@ const SectionMargin = styled.section`
   padding: 150px 0;
   background-color: #262626;
 `;
-
 const Title = styled.h1`
   font-size: 150px;
-  text-align: right;
+  text-align: center;
   color: #fff;
   margin-top:auto;
   margin-bottom:auto;
+  @media screen and (max-width: 850px) {
+    font-size: 100px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 70px;
+  }
 `;
 const BoldTitle = styled.span`
   font-size: 50px;
@@ -80,5 +85,8 @@ const Parragraph = styled.p`
   font-size: 20px;
   color: #bfbfbf;
   margin-top: 20px;
+  margin-bottom: 40px;
+`;
+const SuperRow = styled(Row)`
   margin-bottom: 40px;
 `;

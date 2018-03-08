@@ -1,5 +1,5 @@
 import React from 'react';
-import PortadaPagInicio from '../contenedores/PortadaPagInicio';
+import FrontSection from '../contenedores/FrontSection';
 import SeccionIntro from '../contenedores/SeccionIntro';
 import FeaturesClientSideSection from '../contenedores/FeaturesClientSideSection';
 import FeaturesCompanySideSection from '../contenedores/FeaturesCompanySideSection';
@@ -8,7 +8,7 @@ import ProjectPackages from '../contenedores/ProjectPackages';
 
 const PagInicio = () => (
   <div>
-    <PortadaPagInicio />
+    <FrontSection />
     <SeccionIntro />
     <FeaturesClientSideSection />
     <FeaturesCompanySideSection />

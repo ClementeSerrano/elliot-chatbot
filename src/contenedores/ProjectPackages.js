@@ -83,6 +83,12 @@ const Title = styled.h1`
   text-align: left;
   margin-top:auto;
   margin-bottom:auto;
+  @media screen and (max-width: 850px) {
+    font-size: 100px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 70px;
+  }
 `;
 const ParragraphContainer = styled.div`
   margin-top: 20px;
