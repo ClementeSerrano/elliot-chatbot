@@ -25,8 +25,6 @@ module.exports = {
     'react/jsx-filename-extension': 1,
     'no-underscore-dangle': 0,
     'jsx-a11y/anchor-is-valid': 0,
-    'no-tabs': 1,
-    'jsx-a11y/alt-text': 0,
-    'eslint-disable-line': 0
+    'no-tabs': 1
   }
 }

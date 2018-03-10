@@ -11,19 +11,19 @@ const SeccionIntro = () => (
       <Row>
         <Col lg={4}>
           <div className="logo">
-            <img src={chatBot} width="150" height="150" />
+            <img src={chatBot} alt="" width="170" height="150" />
           </div>
-          <Parrafo> Un asistente virtual y automatizado</Parrafo>
+          <Parrafo> Un asistente virtual de ventas y servicio al cliente</Parrafo>
         </Col>
         <Col lg={4}>
           <div className="logo">
-            <img src={conversacion} width="150" height="150" />
+            <img src={conversacion} alt="" width="180" height="150" />
           </div>
-          <Parrafo> Que mantiene conversaciones con tus clientes</Parrafo>
+          <Parrafo> Que mantiene conversaciones amistosas e instantáneas con tus clientes</Parrafo>
         </Col>
         <Col lg={4}>
           <div className="logo">
-            <img src={crecimiento} width="150" height="150" />
+            <img src={crecimiento} alt="" width="170" height="150" />
           </div>
           <Parrafo> Y potencia la productividad en tus ventas</Parrafo>
         </Col>
@@ -37,7 +37,7 @@ export default SeccionIntro;
 const MargenSeccion = styled.section`
   position: relative;
   padding: 150px 0;
-  background-color: #ffdb4d;
+  background-color: #fff;
   text-align: center;
 `;
 
