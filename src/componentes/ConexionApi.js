@@ -26,13 +26,15 @@ class ConexionApi extends Component {
             })
           })
         response = await response.json()
-        if (response.answers.length && response.answers[0].score <= 40) {
-          this.setDefaultAnswer()
+        if (response.answers.length) {
+          if (response.answers[0].score <= 40) {
+            this.setDefaultAnswer()
+          } else {
+            this.setState({ answers: fixVowels(response.answers) })
+          } 
         } else {
-          this.setState({ answers: fixVowels(response.answers) })
+          this.setDefaultAnswer()
         }
-      } else {
-        this.setDefaultAnswer()
       }
     } catch (e) {
       console.log(e)
