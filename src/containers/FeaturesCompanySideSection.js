@@ -26,9 +26,6 @@ const SuperContainer = styled.header`
   padding-bottom: 800px;
   background: #fff;
 `;
-const TitleContent = styled.div`
-  max-width: 500px;
-`;
 const Title = styled.h1`
   font-size: 150px;
   text-align: center;

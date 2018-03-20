@@ -5,62 +5,44 @@ import chatBot from '../img/chatbot.png';
 import conversacion from '../img/conversacion.png';
 import crecimiento from '../img/crecimiento.png';
 
-const SeccionIntro = () => (
-  <MargenSeccion>
+const IntroSection = () => (
+  <SectionMargin>
     <Grid bsClass="container">
       <Row>
         <Col lg={4}>
           <div className="logo">
             <img src={chatBot} alt="" width="170" height="150" />
           </div>
-          <Parrafo> Un asistente virtual de ventas y servicio al cliente</Parrafo>
+          <Paragraph> Un asistente virtual de ventas y servicio al cliente</Paragraph>
         </Col>
         <Col lg={4}>
           <div className="logo">
             <img src={conversacion} alt="" width="180" height="150" />
           </div>
-          <Parrafo> Que mantiene conversaciones amistosas e instantáneas con tus clientes</Parrafo>
+          <Paragraph> Que mantiene conversaciones amistosas e instantáneas con tus clientes</Paragraph>
         </Col>
         <Col lg={4}>
           <div className="logo">
             <img src={crecimiento} alt="" width="170" height="150" />
           </div>
-          <Parrafo> Y potencia la productividad en tus ventas</Parrafo>
+          <Paragraph> Y potencia la productividad en tus ventas</Paragraph>
         </Col>
       </Row>
     </Grid>
-  </MargenSeccion>
+  </SectionMargin>
 );
 
-export default SeccionIntro;
+export default IntroSection;
 
-const MargenSeccion = styled.section`
+const SectionMargin = styled.section`
   position: relative;
   padding: 150px 0;
   background-color: #fff;
   text-align: center;
 `;
 
-const Titulo = styled.h1`
-  font-size: 65px;
-  margin-bottom: 40px;
-`;
-
-const Parrafo = styled.p`
+const Paragraph = styled.p`
   font-size: 25px;
   text-align: center;
   margin-top: 20px;
-`;
-
-const ImgChatBot = styled.div`
-  padding-bottom: 61.775701%;
-  position: relative;
-  top: 0; 
-  bottom: 0; 
-  left: 0; 
-  right: 0;
-  width: 60%; 
-  height: 60%;
-  background-size: 100% 100%;
-  background-image: url(${chatBot});
 `;

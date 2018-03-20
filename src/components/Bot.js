@@ -2,7 +2,7 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import ChatBot from '../lib/index'
-import ConexionApi from './ConexionApi'
+import ApiConection from './ApiConection'
 
 const theme = {
   background: '#f5f8fb',
@@ -29,7 +29,7 @@ const steps = [
   },
   {
     id: '3',
-    component: <ConexionApi />,
+    component: <ApiConection />,
     asMessage: true,
     trigger: 'pregunta'
   }

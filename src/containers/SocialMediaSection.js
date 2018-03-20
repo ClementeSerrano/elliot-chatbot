@@ -27,7 +27,7 @@ const SocialMediaSection = () => (
         </Col>
       </Row>
     </Grid>
-  </SuperContainer>
+  </SuperContainer> 
 );
 
 export default SocialMediaSection;

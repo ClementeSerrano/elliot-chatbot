@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {fixVowels} from '../lib/helpers/answers'
 
-class ConexionApi extends Component {
+class ApiConection extends Component {
   state = {
     answers: []
   }
@@ -54,4 +54,4 @@ class ConexionApi extends Component {
   }
 }
 
-export default ConexionApi
+export default ApiConection;

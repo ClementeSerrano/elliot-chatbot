@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 import logo from '../img/logo.png';
 
-const BarraNavegacion = () => (
+const SuperNavBar = () => (
   <NavHeader>
-    <SuperNavBar inverse collapseOnSelect fixedTop>
+    <NavStyle inverse collapseOnSelect fixedTop>
       <Navbar.Header>
         <Navbar.Brand>
           <Logo src={logo} />
@@ -23,17 +23,17 @@ const BarraNavegacion = () => (
           </NavItem>
         </Nav>
       </Navbar.Collapse>
-    </SuperNavBar>
+    </NavStyle>
   </NavHeader>
 );
 
-export default BarraNavegacion;
+export default SuperNavBar;
 
 const NavHeader = styled.header`
     padding: 40px;
 `;
 
-const SuperNavBar = styled(Navbar)`
+const NavStyle = styled(Navbar)`
     border-color: rgba(34, 34, 34, 0.05);
     font-family: 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 100;
