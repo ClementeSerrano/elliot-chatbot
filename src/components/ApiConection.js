@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {fixVowels} from '../lib/helpers/answers'
+import botConfig from '../botConfig.json'
 
 class ApiConection extends Component {
   state = {
@@ -11,15 +12,13 @@ class ApiConection extends Component {
       const { steps } = this.props
       const question = steps.pregunta.value
       if (question) {
-        // We need to take out the knowledgeBaseID of the clients to avoid filtering to the client.
-        // Maybe make API requests from our own server
         var response = await fetch(
-          'https://westus.api.cognitive.microsoft.com/qnamaker/v2.0/knowledgebases/ff47195a-05db-4768-abf2-6218af1ab1bc/generateAnswer', {
+          botConfig.apiURL, {
             method: 'POST',
             headers: {
               Accept: 'application/json',
               'Content-Type': 'application/json',
-              'Ocp-Apim-Subscription-Key': '15ebe6a507834b3780247bb0822f25c3'
+              'Ocp-Apim-Subscription-Key': botConfig.apiKey
             },
             body: JSON.stringify({
               'question': `${question}`

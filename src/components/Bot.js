@@ -3,18 +3,9 @@ import { ThemeProvider } from 'styled-components'
 
 import ChatBot from '../lib/index'
 import ApiConection from './ApiConection'
+import botConfig from '../botConfig.json'
 
-const theme = {
-  background: '#f5f8fb',
-  fontFamily: 'Helvetica Neue',
-  headerBgColor: '#7b4397',
-  headerFontColor: '#fff',
-  headerFontSize: '15px',
-  botBubbleColor: '#7b4397',
-  botFontColor: '#fff',
-  userBubbleColor: '#fff',
-  userFontColor: '#4a4a4a'
-}
+const theme = botConfig.theme
 
 const steps = [
   {
