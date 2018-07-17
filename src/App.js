@@ -1,19 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
-import Bot from './components/Bot'; 
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import './App.css'
+import Bot from './components/Bot'
 
-import HomePage from './pages/HomePage';
+import HomePage from './components/Home'
 
 const App = () => (
   <Router>
-    <div className="App">
+    <div className='App'>
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path='/' component={HomePage} />
       </Switch>
       <Bot />
     </div>
   </Router>
-);
+)
 
-export default App;
+export default App
