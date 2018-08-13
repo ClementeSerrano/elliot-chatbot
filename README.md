@@ -1,21 +1,16 @@
-# UTIPS SpA | Proyecto UBot
-Versión MVP.
+# Elliot Project
+MVP version.
 
-Desarrollado por Joaquín Gumucio & Clemente Serrano (inicio: 20-02-2018).
+Develop by Clemente Serrano & Joaquín Gumucio.
 
-Copyright © 2018 UTIPS SpA. Todos los derechos reservados.
+Copyright © 2018 Clemente Serrano. All rights reserved.
 
-# Empezando
+# Getting started
 
-## Instalaciones previas
+## Previous instalations
 
-* `npx create-react-app ubot` (se crea la app)
-* `npm start` (se corre la app).
-* `npm install --save-dev eslint eslint-config-airbnb eslint-plugin-react` (dentro de la carpeta de la app, se instala Eslint version Airbnb para la correccion de la sintaxis del codigo).
-* `sudo npm install -g eslint` (se instala de manera global Eslint).
+* `npx create-react-app ubot` (we create the app)
+* `npm start` (run the app).
+* `npm install --save-dev eslint eslint-config-airbnb eslint-plugin-react` (inside the folder of the app, Eslint version Airbnb is installed to correct the syntax of the code).
+* `sudo npm install -g eslint` (is installed globally Eslint).
 * `eslint --init` > `Use a popular style guide` > `Airbnb` > `y` > `JavaScript`.
-* `npm install --save react react-dom` junto a `npm install --save react-bootstrap` (framework de estilos Bootstrap adaptado para ReactJS).
-* `npm install --save react-router-dom` (enrutador de URLs).
-* `npm install --save react-fontawesome` (iconos FontAwesome).
-* `npm install --save styled-components` (metodologia de estilos dentro de los .js).
-* `npm install react-simple-chatbot --save` (paquete con algunas bases para construir el chatbot).
